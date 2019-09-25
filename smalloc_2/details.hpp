@@ -4,6 +4,8 @@
 
 #include <cstddef>
 
+namespace details{
     constexpr extern inline std::size_t max_align = alignof(std::max_align_t);
+}
 
 #endif
