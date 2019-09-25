@@ -2,6 +2,9 @@
 #include <tuple>
 #include "debug.hpp"
 
+
+namespace details{
+
 chunk::chunk(std::uintptr_t   address_,
              std::size_t         size_,
              busyness           state_)
@@ -42,6 +45,6 @@ bool chunk::operator < (const chunk& rhs) const{
     return std::tie(get_state(), get_size() ,get_address())<std::tie(rhs.get_state(), rhs.get_size(), rhs.get_address());
 }
 
-
+}
 
 

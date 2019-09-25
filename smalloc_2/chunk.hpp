@@ -7,7 +7,7 @@
 
 
 
-
+namespace details{
 
 class chunk{
 public:
@@ -46,5 +46,7 @@ std::uintptr_t   address;
 std::size_t      size;
 busyness         state;
 };
+
+}
 
 #endif
